@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My page</title>
+<meta charset="UTF-8"/>
+<link href="style2.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body style="background-image:url(pics/pic5.jpg); background-attachment: fixed; background-size: cover; color: #00ff00;">
+<div id="pagebox" style="background-image: url(images/transparent.png); width: 70%; margin: auto;">
+<header>
+<img class="banner" src="pics/banner2.jpg" style="height: 50%; width:auto;" alt="banner">
+</header>
+<div>
+<nav>
+<ul>
+<li class="curent"><a href="index.html">Home</a></li>
+<li><a href="content.html">Pictures</a></li>
+<li><a href="About.html">Contact</a></li>
+</ul>
+</nav>
+
+
+<section>
+<h2>This is moscow</h2>
+<img class="photograph" src="pics/pic1.jpg" alt="a picture of moscow" style="width: 40%; height: auto;">
+
+<hr>
+
+<h2>random Sound</h2>
+<audio controls>
+<source src="audio/bensound-badass.mp3" type="audio/mpeg">
+</audio>
+<hr>
+
+<h2>slideshow of moscow</h2>
+
+<div class="slider">
+<span id="slide-1"></span>
+<span id="slide-2"></span>
+<span id="slide-3"></span>
+<div class="image-container">
+<img src="pics/pic2.jpg" class="slide" width="500" height="300" />
+<img src="pics/pic3.jpg" class="slide" width="500" height="300" />
+<img src="pics/pic4.jpg" class="slide" width="500" height="300" />
+</div>
+<div class="buttons">
+<a href="#slide-1"></a>
+<a href="#slide-2"></a>
+<a href="#slide-3"></a>
+</div>
+</div>
+	
+<hr>
+<h2>Video of moscow at night</h2>
+<div class="video_container"><iframe src="https://www.youtube.com/embed/gVON4dAVGEg"></iframe></div>
+
+
+</section>
+<p>It is this time in russia. that is because moscow is 9 hours ahead of us.</p>
+<script type="text/javascript">
+var current= new Date()
+var day_night= current.getHours()
+if(day_night>=2)
+document.write("<img src='pics/moon.svg'>")
+else
+document.write("<img src='pics/sun.svg'>")
+
+</script>
+<footer>
+<p><em>&copy; Brandon Plaster 2022</em></p>
+</footer>
+
+</div>
+</body>
+</html>
